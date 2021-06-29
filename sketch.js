@@ -58,10 +58,10 @@ function setup() {
   blocks9 = new Block(700,95);
 
   //polygon with sling
-  ball=Bodies.circle(50,200,20);
+  ball=Bodies.circle(100,200,40);
   World.add(world,ball);
 
-  sling = new SlingShot(this.ball,{x:100,y:200});
+  sling = new SlingShot(this.ball,{x:150,y:200});
   
 }
 
@@ -137,7 +137,7 @@ function draw() {
   blocks9.display();
 
 
-  ellipse(ball.position.x,ball.position.y,20)
+  ellipse(ball.position.x,ball.position.y,20,20)
   sling.display();
 }
 
